@@ -1,0 +1,22 @@
+{
+	"name": "zadaca_01",
+	"version": "1.0.0",
+	"description": "",
+	"main": "server.mjs",
+	"scripts": {
+		"pripremi": "npm link --save express sqlite3 express-session cookie-parser cors",
+		"debug": "nodemon server.mjs konfiguracija.csv",
+		"prestart": "npm run pripremi",
+		"start": "node server.mjs konfiguracija.csv",
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"author": "Domagoj Petek",
+	"license": "ISC",
+	"dependencies": {
+		"cookie-parser": "file:../../../../../../../usr/lib/node_modules/cookie-parser",
+		"cors": "file:../../../../../../../usr/lib/node_modules/cors",
+		"express": "file:../../../../../../../usr/lib/node_modules/express",
+		"express-session": "file:../../../../../../../usr/lib/node_modules/express-session",
+		"sqlite3": "file:../../../../../../../usr/lib/node_modules/sqlite3"
+	}
+}

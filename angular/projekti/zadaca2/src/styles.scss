@@ -1,0 +1,50 @@
+$primarna: #3273a8;
+$sekundarna: #a84a32;
+$pozadinska: #e0e0e0;
+$tekst: #333;
+
+body {
+  background-color: $pozadinska;
+  color: $tekst;
+}
+
+nav {
+  color: $sekundarna;
+  padding: 10px;
+}
+
+table {
+  width: 100%;
+  margin: 25px 0;
+  border-collapse: collapse;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  th {
+    background-color: $primarna;
+    color: #fff;
+  }
+  tr:hover {
+    background-color: #f5f5f5;
+  }
+}
+
+h2 {
+  color: $primarna;
+}
+
+h3 {
+  color: $sekundarna;
+}
+
+a {
+  color: $primarna;
+  text-decoration: none;
+  &:hover {
+    color: $sekundarna;
+  }
+}
